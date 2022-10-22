@@ -1,0 +1,17 @@
+//program to find sum of the elements of an array using for each loop.
+
+function sumArray(array) {
+  let sum = 0; 
+
+/*Go through each item in the array and execute this function which adds
+each item to sum 
+*/
+  array.forEach(item => {
+    sum += item;
+  });
+
+  console.log(sum); 
+  return sum;
+}
+
+sumArray([1, 4, 0, 9, -3]); //logs 11
